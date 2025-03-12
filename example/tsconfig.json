@@ -4,7 +4,7 @@
     "rootDir": "src",
     "baseUrl": ".",
     "paths": {
-      "react-native-proton-sdk": ["../lib/typescript/commonjs/src/index"]
+      "react-native-proton-sdk": ["../lib/commonjs/index"]
     },
     "typeRoots": [
       "./node_modules/@types",
