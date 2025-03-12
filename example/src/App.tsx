@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import { ConnectWallet } from 'react-native-proton-sdk';
+import { ConnectWallet, type LinkOptions } from 'react-native-proton-sdk';
 
 export default function App() {
   const [result, setResult] = useState<string>('');
 
   useEffect(() => {
-    const linkOptions = {
+    const linkOptions: LinkOptions = {
       transport: {
         onRequest: (request: any) => {
           console.log('request', request);
