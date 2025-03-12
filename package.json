@@ -1,6 +1,6 @@
 {
-  "name": "react-native-proton-sdk",
-  "version": "0.1.0",
+  "name": "react-native-xpr-sdk",
+  "version": "0.1.1",
   "description": "Proton sdk for react native",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",

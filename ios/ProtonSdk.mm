@@ -1,7 +1,7 @@
 #import "ProtonSdk.h"
 
 @implementation ProtonSdk
-RCT_EXPORT_MODULE()
+RCT_EXPORT_MODULE(ProtonSdk)
 
 // Example method
 // See // https://reactnative.dev/docs/native-modules-ios
