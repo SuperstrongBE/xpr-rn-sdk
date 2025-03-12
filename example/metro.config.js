@@ -1,6 +1,5 @@
 const path = require('path');
 const { getDefaultConfig } = require('@react-native/metro-config');
-const escape = require('escape-string-regexp');
 
 const root = path.resolve(__dirname, '..');
 const pak = require('../package.json');
@@ -23,7 +22,6 @@ module.exports = (async () => {
   return {
     watchFolders: [root],
     transformer: {
-      babelTransformerPath: require.resolve('react-native-reanimated/plugin'),
       getTransformOptions: async () => ({
         transform: {
           experimentalImportSupport: false,
