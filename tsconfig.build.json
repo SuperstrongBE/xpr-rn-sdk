@@ -1,15 +1,19 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "lib/typescript",
-    "paths": {}
+    "rootDir": ".",
+    "paths": {},
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "composite": true
   },
   "include": [
     "src/**/*"
   ],
   "exclude": [
     "**/__tests__",
-    "example"
+    "example",
+    "node_modules"
   ]
 }

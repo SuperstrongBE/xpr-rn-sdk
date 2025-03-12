@@ -8,7 +8,7 @@ import type {
 import type { TurboModule } from 'react-native';
 import { TurboModuleRegistry } from 'react-native';
 import type { ReactNativeTransportOptions } from './transport';
-import type { ProtonLink } from 'react-native-proton-sdk';
+import type { ProtonLink } from './types';
 
 export interface ConnectWalletArgs {
   linkOptions: LinkOptions & {

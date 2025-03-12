@@ -1,4 +1,9 @@
-import type { LinkSession, LinkTransport, ChainIdType } from '@proton/link';
+import type {
+  LinkSession,
+  LinkTransport,
+  ChainIdType,
+  Link,
+} from '@proton/link';
 import type { JsonRpc } from '@proton/js';
 import type { ReactNativeTransportOptions } from './transport';
 
@@ -36,3 +41,4 @@ export type ConnectWalletResult = {
 };
 
 export type { LinkSession };
+export type ProtonLink = Link;
