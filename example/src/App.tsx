@@ -1,12 +1,39 @@
 import { useState, useEffect } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-proton-sdk';
+import { ConnectWallet } from 'react-native-proton-sdk';
 
 export default function App() {
-  const [result, setResult] = useState<number | undefined>();
+  const [result, setResult] = useState<string>('');
 
   useEffect(() => {
-    multiply(3, 7).then(setResult);
+    const linkOptions = {
+      transport: {
+        onRequest: (request: any) => {
+          console.log('request', request);
+        },
+      },
+      chains: [
+        {
+          chainId:
+            'aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906',
+          nodeUrl: 'https://eos.greymass.com',
+        },
+      ],
+      scheme: 'proton' as const,
+      endpoints: ['https://eos.greymass.com'],
+    };
+
+    const connect = ConnectWallet({
+      linkOptions,
+      transportOptions: {
+        requestAccount: 'test',
+        getReturnUrl: () => 'proton://',
+      },
+    });
+
+    connect().then((res) => {
+      setResult(JSON.stringify(res, null, 2));
+    });
   }, []);
 
   return (

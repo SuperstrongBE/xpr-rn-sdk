@@ -2595,6 +2595,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@proton/js@npm:^28.1.2":
+  version: 28.1.2
+  resolution: "@proton/js@npm:28.1.2"
+  dependencies:
+    "@bloks/constants": 28.11.0
+    "@peculiar/webcrypto": ^1.4.0
+    abortcontroller-polyfill: ^1.7.3
+    base64url: ^3.0.1
+    bn.js: ^5.2.1
+    cross-fetch: ^3.1.4
+    elliptic: ^6.5.4
+    event-target-shim: ^6.0.2
+    fast-text-encoding: ^1.0.3
+    hash.js: 1.1.7
+    pako: 2.0.3
+    ripemd-ts: 0.0.2
+  checksum: e23449d6cff20c9d3fea253a595a82f75cd023775dc9fd276e8174f7026fa7d3ee860780724235fcda7618593208e5e3190cdee20623d04cc96ce0a8a41f3f00
+  languageName: node
+  linkType: hard
+
 "@proton/link@npm:^4.2.18":
   version: 4.2.18
   resolution: "@proton/link@npm:4.2.18"
@@ -2610,6 +2630,24 @@ __metadata:
     uuid: ^8.3.2
     ws: ^7.4.3
   checksum: c13160d528742ed442ccbb4f0a8b415fb08b9e2fe0f77a2cf12c97bc6fab1a65f05069cfe9c7d24bcb89f25a5ecee0b6683b7c6aa514b6bfc6b0e2f3b39352c6
+  languageName: node
+  linkType: hard
+
+"@proton/link@npm:^4.2.19":
+  version: 4.2.19
+  resolution: "@proton/link@npm:4.2.19"
+  dependencies:
+    "@greymass/eosio": ^0.6.1
+    "@jafri/asmcrypto.js": ^2.3.2
+    "@proton/js": ^28.0.0
+    "@proton/signing-request": ^4.2.7
+    bson: ^4.6.0
+    fetch-ponyfill: ^7.1.0
+    isomorphic-ws: ^4.0.1
+    pako: ^2.0.3
+    uuid: ^8.3.2
+    ws: ^7.4.3
+  checksum: 5b2969167ae48b69ed504df1983e726b00850883a9c7e6f7b38663ab7b898f63ab87bfc803d844595cb44fe7712e6dc053db93d34457c49455dcfd8d31e85665
   languageName: node
   linkType: hard
 
@@ -11232,6 +11270,10 @@ __metadata:
     "@babel/core": ^7.25.2
     "@babel/preset-env": ^7.25.3
     "@babel/runtime": ^7.25.0
+    "@greymass/eosio": ^0.7.0
+    "@proton/js": ^28.1.2
+    "@proton/link": ^4.2.19
+    "@proton/signing-request": ^4.2.7
     "@react-native-community/cli": 15.0.1
     "@react-native-community/cli-platform-android": 15.0.1
     "@react-native-community/cli-platform-ios": 15.0.1

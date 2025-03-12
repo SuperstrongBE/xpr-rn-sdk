@@ -1,0 +1,18 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "baseUrl": ".",
+    "paths": {
+      "react-native-proton-sdk": ["../lib/typescript/commonjs/src/index"]
+    },
+    "typeRoots": [
+      "./node_modules/@types",
+      "../node_modules/@types"
+    ],
+    "outDir": "./lib"
+  },
+  "include": [
+    "src"
+  ]
+}
